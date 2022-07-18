@@ -1,11 +1,14 @@
 function estaOrdenado(nuns) {
     for(let i = 1; i <= nuns.length-1; i++){
-        if(nuns[i] - nuns[i -1] <= 0 ){
+        if(nuns[i] - nuns[i - 1] <= 0 ){
+            console.log(nuns[i])
+            console.log(nuns[i - 1])
+            // compara se o numero anterior menos o atual é igual a 0
             return console.log("não está ordenado")
         }
     }
     return console.log("está ordenado")
 }
 
-console.log(estaOrdenado([1,2,3,4,5,6]))
-console.log(estaOrdenado([1,7,3,95,6]))
+console.log(estaOrdenado([2,1]))
+console.log(estaOrdenado([1,2]))
