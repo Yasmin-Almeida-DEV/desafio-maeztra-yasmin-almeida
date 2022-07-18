@@ -1,0 +1,27 @@
+{
+  "name": "desafio-maeztra-dev",
+  "version": "1.0.0",
+  "description": "desafio vaga front-end maeztra",
+  "main": "resposta_questao_1.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "sass": "sass --watch sass:styles"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/maeztra/desafio-maeztra-dev.git"
+  },
+  "keywords": [
+    "maeztra"
+  ],
+  "author": "Yasmin Almeida",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/maeztra/desafio-maeztra-dev/issues"
+  },
+  "homepage": "https://github.com/maeztra/desafio-maeztra-dev#readme",
+  "dependencies": {
+    "sass": "^1.53.0",
+    "slick-carousel": "^1.8.1"
+  }
+}

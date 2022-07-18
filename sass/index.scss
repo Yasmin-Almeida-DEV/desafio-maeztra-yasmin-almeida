@@ -1,0 +1,400 @@
+// CARROUSSEL BANNERS TOPO //
+
+.banner-top{
+    .carroussel{
+        .slick-arrow {
+            background: transparent;
+            border: none;
+            position: absolute;
+            top: calc(50% - 55px);
+            z-index: 1;
+            --x-offset: 157px;
+            &.slick-prev {
+                left: var(--x-offset);
+            }
+            &.slick-next{
+                right: var(--x-offset);
+            }
+
+            @media (max-width: 991px) {
+                top: calc(50% - 22px);
+                --x-offset: 15px;
+            }
+        }
+
+        .slick-dots {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: absolute;
+            top: calc(100% - 60px);
+            left: 47%;
+
+            @media (max-width: 991px) {
+                top: calc(100% - 30px);
+                left: 40%;
+            }
+
+            &>li{
+                width: 16px;
+                height: 16px;
+                border-radius: 50%;
+                border: 2px solid  #FAA500;;
+                display: grid;
+                place-items: center;
+
+                @media (max-width: 991px) {
+                    width: 8px;
+                    height: 8px;
+                }
+
+                & + li{
+                    margin-left: 10px;
+                }
+    
+                &>button {
+                    width: 16px;
+                    height: 16px;
+                    border-radius: 50%;
+                    border: none;
+                    color: transparent;
+                    background-color: transparent;
+
+                    @media (max-width: 991px) {
+                        width: 8px;
+                        height: 8px;
+                    }
+                }
+                &.slick-active {
+                    border: 2px solid  #FAA500;
+                    background-color:  #FAA500;
+                }
+            }
+        }
+
+        li{
+            &.slick-slide{
+                position: relative;
+
+                img{
+                    width: 100%;
+
+                    &.mobile-only{
+                        @media (max-width: 991px) {
+                            display: block;
+                        }
+                        @media (min-width: 991px) {
+                            display: none;
+                        }
+                    }
+
+                    &.desktop-only{
+                        @media (max-width: 991px) {
+                            display: none;
+                        }
+                        @media (min-width: 991px) {
+                            display: block;
+                        }
+                    }
+                }
+            }
+
+            .content{
+                position: absolute;
+                top: 0;
+                left: 0;
+                margin: 151px 0px auto 323px;
+                display: flex;
+                flex-direction: column;
+                align-items: flex-start;
+
+                @media (max-width: 991px ) {
+                    margin: 63px 0px auto 63px;
+                }
+                
+                @media (max-width: 420px) {
+                    margin: 40px 0px auto 63px;
+                }
+
+                h2{
+                    font-family: var(--font-2);
+                    font-weight: 700;
+                    font-size: 40px;
+                    color: #fff;
+                    margin-bottom: 40px;
+
+                    @media (max-width: 991px) {
+                        margin-bottom: 24px;
+                        max-width: 223px;
+                    }
+                }
+
+                p{
+                    font-family: var(--font-2);
+                    font-weight: 400;
+                    font-size: 20px;
+                    line-height: 24.38px;
+                    color: #fff;
+                    margin-bottom: 32px;
+                    max-width: 467px;
+
+                    @media (max-width: 991px) {
+                        font-size: 14px;
+                        margin-bottom: 16px;
+                        max-width: 239px;
+                    }
+                }
+
+                a{
+                    background: #FAA500;
+                    border-radius: 10px;
+                    padding: 14px 30px;
+                    font-family: var(--font-2);
+                    font-size: 16px;
+                    font-weight: 700;
+                    color: #fff;
+                    text-decoration: none;
+
+                    @media (max-width: 991px) {
+                        font-size: 14px;
+                        width: 76px;
+                        height: 28px;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        padding: 0px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+// VANTAGENS //
+
+.goods{
+    margin-bottom: 74px;
+
+    &__content{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        h2{
+            margin-bottom: 21px;
+            margin-top: 25px;
+            font-family: var(--font-1);
+            font-weight: 700;
+            font-size: 16px;
+            color: #353535;
+        }
+
+        ul{
+            display: flex;
+            gap: 15px;
+            @media (max-width: 420px) {
+                flex-direction: column;
+            }
+
+            Li{
+                img{
+                    width: 100%;
+                }
+            }
+        }
+    }
+}
+
+// MARCAS //
+
+.brands{
+    margin-bottom: 74px;
+
+    &__content{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        h2{
+            font-family: var(--font-1);
+            font-weight: 700;
+            font-size: 32px;
+            margin-bottom: 25px;
+            color: #353535;;
+        }
+
+        ul{
+            display: flex;
+            gap: 15px;
+
+            @media (max-width: 420px) {
+                flex-direction: column;
+            }
+
+            li{
+                display: flex;
+                align-items: center;
+                
+                a{
+                    img{
+                        max-width: 307px;
+                        width: 100%;
+                    }
+                }
+
+            }
+        }
+    }
+}
+
+// VITRINE //
+
+.top-sellers{
+    margin-bottom: 80px;
+
+    .vitrine{
+        h2{
+            font-family: var(--font-1);
+            font-weight: 700;
+            font-size: 32px;
+            text-align: center;
+            margin-bottom: 25px;
+        }
+    }
+    
+    .slick-arrow {
+        background: transparent;
+        border: none;
+        position: absolute;
+        top: calc(50% - 75px);
+        z-index: 1;
+        --x-offset: 3px;
+
+        @media (max-width: 1540px) {
+            top: calc(50% - 55px);
+        }
+
+        &.slick-prev {
+            left: var(--x-offset);
+        }
+
+        &.slick-next{
+            right: var(--x-offset);
+        }
+    }
+}
+
+// BANNER COLEÇÃO //
+
+.banner-bottom{
+    margin-bottom: 80px;
+
+    @media (max-width: 991px) {
+        margin-bottom: 39px;
+    }
+
+    &__content{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 64px;
+
+        @media (max-width: 991px) {
+            flex-direction: column;
+            gap: 24px;
+        }
+
+        .side-text{
+            max-width: 420px;
+            width: 100%;
+
+            h3{
+                font-family: var(--font-1);
+                font-weight: 700;
+                font-size: 24px;
+                margin-bottom: 16px;
+                color: #353535;;
+            }
+
+            p{
+                font-family: var(--font-1);
+                font-weight: 400;
+                font-size: 14px;
+                line-height: 21px;
+                color: #353535;;
+            }
+        }
+
+        .banner{
+            a{
+                img{
+                    width: 100%;
+                    max-width: 1114px;
+                }
+            }
+        }
+    }
+}
+
+// NEWSLETTER //
+
+.newsletter{
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    align-items: center;
+    background-color: #FAFAFA;
+    border-top: #EFEFEF solid 2px;
+    border-bottom: #EFEFEF solid 2px;
+    height: 120px;
+
+    @media (max-width: 420px) {
+        flex-direction: column;
+        max-width: 90%;
+        margin: 0 auto;
+    }
+
+    h2{
+        font-family: var(--font-1);
+        font-weight: 700;
+        font-size: 24px;
+    }
+
+    div{
+        display: flex;
+        width: 100%;
+        max-width: 630px;
+        position: relative;
+        align-items: center;
+
+        input[type=email]{
+            width: 100%;
+            background: #FFFFFF;
+            border: 1px solid #353535;
+            border-radius: 4px;
+            height: 40px;
+            padding: 0px 24px;
+            flex-grow:2;
+            position: relative;
+            &::placeholder{
+                font-family: var(--font-1);
+                font-weight: 400;
+                font-size: 14px;
+            }
+        }
+    
+        input[type=button]{
+            width: 131px;
+            height: 42px;
+            background: #FAA500;
+            border: 1px solid #FAA500;
+            border-radius: 4px;
+            color: #FFFFFF;
+            font-size: 16px;
+            font-weight: 700px;
+            font-family: var(--font-1);
+            position: absolute;
+            right: 0;
+        }
+    }
+}

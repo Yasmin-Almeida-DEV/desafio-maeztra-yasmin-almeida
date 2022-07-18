@@ -1,0 +1,104 @@
+.product1, .product2 {
+  font-family: var(--font-1);
+  color: #353535;
+  min-height: 565.05px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  width: 100%;
+  max-width: 308px;
+  justify-content: space-between;
+  align-items: center;
+}
+@media (max-width: 1540px) {
+  .product1, .product2 {
+    max-width: 225px;
+    margin-left: 8px;
+    align-items: unset;
+    min-height: unset;
+  }
+}
+@media (max-width: 420px) {
+  .product1, .product2 {
+    max-width: 100%;
+  }
+}
+.product1 img, .product2 img {
+  cursor: pointer;
+}
+.product1 .product-content, .product2 .product-content {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.product1 .product-content .colors1, .product2 .product-content .colors1 {
+  display: flex;
+  gap: 8px;
+}
+.product1 .product-content .colors1 li a, .product2 .product-content .colors1 li a {
+  display: block;
+  height: 27px;
+  width: 27px;
+  border-radius: 4px;
+}
+.product1 .product-content .colors1 li.option1 > a, .product2 .product-content .colors1 li.option1 > a {
+  background-color: #DEAC71;
+}
+.product1 .product-content .colors1 li.option2 > a, .product2 .product-content .colors1 li.option2 > a {
+  background-color: #D37164;
+}
+.product1 .product-content .colors1 li.option3 > a, .product2 .product-content .colors1 li.option3 > a {
+  background-color: #6497D3;
+}
+.product1 .product-content .colors1 li.option4 > a, .product2 .product-content .colors1 li.option4 > a {
+  background-color: #3C3B79;
+}
+.product1 .product-content .colors2, .product2 .product-content .colors2 {
+  display: flex;
+  gap: 8px;
+}
+.product1 .product-content .colors2 li a, .product2 .product-content .colors2 li a {
+  display: block;
+  height: 27px;
+  width: 27px;
+  border-radius: 4px;
+}
+.product1 .product-content .colors2 li.option1 > a, .product2 .product-content .colors2 li.option1 > a {
+  background-color: #1C1A19;
+}
+.product1 .product-content .colors2 li.option2 > a, .product2 .product-content .colors2 li.option2 > a {
+  background-color: #D84E4B;
+}
+.product1 .product-content .colors2 li.option3 > a, .product2 .product-content .colors2 li.option3 > a {
+  background-color: #CFC9B0;
+}
+.product1 .product-content .colors2 li.option4 > a, .product2 .product-content .colors2 li.option4 > a {
+  background-color: #EAE9E5;
+}
+.product1 .product-content .price, .product2 .product-content .price {
+  font-size: 20px;
+  font-weight: 700;
+}
+.product1 .product-content .product-name, .product2 .product-content .product-name {
+  font-family: var(--font-1);
+  font-size: 16px;
+}
+.product1 .product-content .product-description, .product2 .product-content .product-description {
+  color: #000000;
+  font-size: 12px;
+  opacity: 0.5;
+  max-width: 254px;
+}
+.product1 .product-content .add-to-cart, .product2 .product-content .add-to-cart {
+  background: #FAA500;
+  border-radius: 4px;
+  font-size: 14px;
+  font-weight: 400;
+  border: none;
+  color: #fff;
+  width: 100%;
+  max-width: 254px;
+  height: 35px;
+}
+
+/*# sourceMappingURL=produto.css.map */
