@@ -1,16 +1,11 @@
-function arraySortedOrNot(arr, n) {
-    if (n == 1 || n == 0)
-        return 1;
-
-    if (arr[n - 1] < arr[n - 2])
-        return 0;
-    return arraySortedOrNot(arr, n - 1);
+function estaOrdenado(nuns) {
+    for(let i = 1; i <= nuns.length-1; i++){
+        if(nuns[i] - nuns[i -1] <= 0 ){
+            return console.log("não está ordenado")
+        }
+    }
+    return console.log("está ordenado")
 }
 
-let arr = [90, 20, 23, 23, 45, 78, 88];
-let n = arr.length;
-
-if (arraySortedOrNot(arr, n) != 0)
-    console.log("está em ordem");
-else
-    console.log("não está em ordem");
+console.log(estaOrdenado([1,2,3,4,5,6]))
+console.log(estaOrdenado([1,7,3,95,6]))
